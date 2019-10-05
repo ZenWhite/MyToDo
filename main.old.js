@@ -22,7 +22,7 @@ addList.addEventListener('click', function() {
 		checkId: `${Math.random() * 9999999999}`
 	}
 	toDoList.push(todo);
-	renderToDo();
+	renderToDo(); 
 	localStorage.setItem('todo', JSON.stringify(toDoList));
 });
 
