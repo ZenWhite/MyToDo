@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>MyToDo</title>
+	<title>Камень-ножницы-бумага</title>
 	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
-	<div class="container">
-		<div class="todo">
-			<div class="todo__top">
-				<h2 class="todo__title">ToDo List for Andrew</h2>
-				<div class="add-todo"></div>
+
+	<div class="game">
+		<div class="start-block">
+			<h1>Камень-ножницы-бумага</h1>
+			<div class="start">Начать играть</div>
+		</div>
+		<div class="game__block display-block">
+			<div class="your-health">
+				<p>Ваши жизни: </p>
+				<div class="health-block">
+					<div class="health-item"><img src="Heart.svg" alt="#" draggable='false'/></div>
+				    <div class="health-item"><img src="Heart.svg" alt="#" draggable='false'/></div>
+				    <div class="health-item"><img src="Heart.svg" alt="#" draggable='false'/></div>
+				</div>
 			</div>
-			<hr class="todo__devider" />
-			<div class="todo-block"></div>
+			<div class="enemy-health">
+				<p>Жизни противника: </p>
+				<div class="health-block">
+					<div class="health-item"><img src="Heart.svg" alt="#" draggable='false'/></div>
+				    <div class="health-item"><img src="Heart.svg" alt="#" draggable='false'/></div>
+				    <div class="health-item"><img src="Heart.svg" alt="#" draggable='false'/></div>
+				</div>
+			</div>
+			<h2>Ваш ход: </h2>
+			<div class="move-item" data-value="stone">
+				<img src="stone.svg" alt="#" draggable='false'/>
+				<p>Камень</p>
+			</div>
+			<div class="move-item" data-value="scirros">
+				<img src="scirros.svg" alt="#" draggable='false'/>
+				<p>Ножницы</p>
+			</div>
+			<div class="move-item" data-value="paper">
+				<img src="paper.svg" alt="#" draggable='false'/>
+				<p>Бумага</p>
+			</div>
 		</div>
 	</div>
-	<script src="main.old.js"></script>
+
+	<script src="main.js"></script>
 </body>
 </html>
